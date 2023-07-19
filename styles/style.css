@@ -1,7 +1,7 @@
 :root {
   --clr-white: #fff;
   --clr-primary: #0b0223;
-  --clr-secondary: #534c64;
+  --clr-buttonsary: #534c64;
   --linear-pink: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
 }
 /* work sans font imported from google fonts */
@@ -47,7 +47,7 @@
 }
 
 .text-gray {
-  color: var(--clr-secondary);
+  color: var(--clr-buttonsary);
 }
 
 /* navigation styles */
@@ -213,6 +213,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 20px;
+  margin-bottom: 80px;
 }
 
 .game-cards img {
@@ -261,10 +262,125 @@ nav a {
   transition: 1s ease-in-out;
 }
 
+/* banner styles */
+.buttons-section {
+  display: flex;
+  margin-bottom: -200px;
+}
+
+.buttons-section-text-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: right;
+  padding-bottom: 50px;
+}
+.buttons-section-text {
+  justify-content: center;
+  align-items: center;
+}
+.buttons-section-text-description {
+  color: #534c64;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* careers styles */
+.career {
+  width: 100%;
+  background: var(--linear-pink);
+  height: 75vh;
+}
+
+.career-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.career-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.career-list li {
+  list-style: none;
+  margin-left: -40px;
+  font-weight: 600;
+}
+
+.left-list li {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.career-text {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.career-text p {
+  max-width: 100%;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.career-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career-img {
+  width: 50%;
+}
+
+.img-container img {
+  height: 560px;
+}
+
+/* buttons section styles */
+.buttons-section {
+  margin-top: 100px;
+  padding: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding: 4px 2px;
+  gap: 15px;
+}
+.button:hover {
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  border: 1px solid rgb(146, 76, 87);
+}
+.button p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.short-image {
+  position: relative;
+  bottom: 300px;
+  right: 120px;
+}
+
 /* footer styles */
 footer {
   background-color: #0b0223;
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 .footer-title {
@@ -378,6 +494,19 @@ footer {
   }
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .buttons-section {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0px;
+  }
+
+  .buttons-section-image {
+    padding: 50px;
+  }
+
+  .buttons-section-image > img {
+    width: 100%;
   }
   .footer-nav,
   .icons,
