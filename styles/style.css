@@ -179,17 +179,17 @@ nav a {
   background: #4ec5f7;
 }
 
-.hero-img {
+/* .hero-img {
   width: 35%;
   position: relative;
-}
+} */
 
-.hero-img img {
+/* .hero-img img {
   width: 120%;
   position: absolute;
   bottom: 0;
   right: 20px;
-}
+} */
 
 /* game cards section styles */
 .game-cards-text {
@@ -212,6 +212,7 @@ nav a {
 .game-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
   margin-top: 20px;
   margin-bottom: 80px;
 }
@@ -222,7 +223,6 @@ nav a {
 
 .overlay-container {
   /* height: 330px; */
-  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   position: relative;
   border-radius: 8px;
@@ -263,28 +263,43 @@ nav a {
 }
 
 /* banner styles */
-.buttons-section {
+.banner-section {
   display: flex;
-  margin-bottom: -200px;
+  justify-content: flex-end;
+  margin-top: 100px;
+  margin-bottom: -50px;
 }
 
-.buttons-section-text-title {
+.banner-section-text-title {
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
   text-align: right;
   padding-bottom: 50px;
 }
-.buttons-section-text {
+.banner-section-text {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 35%;
+  max-width: 350px;
+  padding-right: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 350px;
 }
-.buttons-section-text-description {
+.banner-section-text-description {
   color: #534c64;
   text-align: right;
-  font-size: 18px;
+  font-size: 0.9rem;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.6rem;
+}
+
+.big-img {
+  width: 90%;
+  margin-right: -100px;
 }
 
 /* careers styles */
@@ -342,12 +357,7 @@ nav a {
 
 /* buttons section styles */
 .buttons-section {
-  margin-top: 100px;
-  padding: 0 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .button {
@@ -371,9 +381,9 @@ nav a {
   font-weight: 400;
 }
 
-.short-image {
+.short-img {
   position: relative;
-  bottom: 300px;
+  bottom: 150px;
   right: 120px;
 }
 
@@ -448,12 +458,20 @@ footer {
   padding-bottom: 113px;
 }
 
+.hide {
+  display: none;
+}
+
 /* responsive style */
 @media screen and (max-width: 576px) {
-  .content-width {
-    width: 95%;
+  content-width {
+    width: 70%;
     margin: 0 auto;
   }
+  /* .content-width {
+    width: 95%;
+    margin: 0 auto;
+  } */
   header {
     background: #fff;
     box-shadow: none;
@@ -478,19 +496,57 @@ footer {
     align-items: center;
     background-color: #fff;
   }
-  .hero-img {
+  /* .hero-img {
     width: 50%;
-  }
+  } */
+
   .hero-img img {
-    width: 250px;
-    top: -80px;
-    right: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
   }
 
   .hero-text {
-    margin-top: 200px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     background-image: url("/images/Group14.png");
     background-repeat: no-repeat;
+    background-size: 350px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    margin-top: -300px;
+  }
+  .banner-section-text-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 350px;
+  }
+  .banner-section-text {
+    width: 100%;
+    margin-bottom: -100px;
+  }
+  .banner-section-text-description {
+    text-align: center;
+  }
+  .banner {
+    padding-top: 100px;
+  }
+  .short-img {
+    position: relative;
+    right: -100px;
+  }
+  .game-cards-text {
+    margin-top: 0;
+  }
+  .game-cards-container {
+    margin-top: 300px;
   }
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
@@ -500,7 +556,18 @@ footer {
     padding: 0;
     gap: 0px;
   }
-
+  .career {
+    width: 100%;
+    background: var(--linear-pink);
+    height: 105vh;
+    width: 100vw;
+  }
+  .career-content {
+    flex-direction: column;
+  }
+  .img-container img {
+    height: 400px;
+  }
   .buttons-section-image {
     padding: 50px;
   }
@@ -537,6 +604,32 @@ footer {
   }
   .follow {
     margin-top: 20px;
+  }
+  .hero-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+  }
+  .hero-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 350px;
+  }
+  .banner-section {
+    flex-direction: column;
+    margin-top: 300px;
+  }
+  .banner-section-text-title {
+    font-size: 2rem;
+    font-weight: 700;
+    /* line-height: 60px; */
+    text-align: center;
+    /* padding-bottom: 50px; */
+  }
+
+  .game-cards-container {
+    margin-top: 350px;
   }
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
