@@ -179,17 +179,33 @@ nav a {
   background: #4ec5f7;
 }
 
-/* .hero-img {
-  width: 35%;
-  position: relative;
-} */
+.button-right {
+  padding-top: 20px;
+  padding-left: 285px;
+}
 
-/* .hero-img img {
-  width: 120%;
-  position: absolute;
-  bottom: 0;
-  right: 20px;
-} */
+/* gamer styles */
+.gamer {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gamer-img-container img {
+  height: 50%;
+  max-width: 700px;
+}
+.gamer-title {
+  font-size: 48px;
+  padding-left: 50px;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.gamer-text-description {
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+}
 
 /* game cards section styles */
 .game-cards-text {
@@ -357,6 +373,11 @@ nav a {
 
 /* buttons section styles */
 .buttons-section {
+  margin-top: 100px;
+  padding: 0 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -390,7 +411,7 @@ nav a {
 /* footer styles */
 footer {
   background-color: #0b0223;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .footer-title {
@@ -616,22 +637,87 @@ footer {
     height: auto;
     margin-top: 350px;
   }
-  .banner-section {
+  /* .banner-section {
     flex-direction: column;
     margin-top: 300px;
   }
   .banner-section-text-title {
     font-size: 2rem;
     font-weight: 700;
-    /* line-height: 60px; */
     text-align: center;
-    /* padding-bottom: 50px; */
+    padding-bottom: 50px;
+  } */
+  .banner-section {
+    flex-direction: column;
+    margin-top: -300px;
   }
-
+  .banner-section-text-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 350px;
+  }
+  .banner-section-text {
+    width: 100%;
+    margin-bottom: -100px;
+  }
+  .banner-section-text-description {
+    text-align: center;
+  }
+  .banner {
+    padding-top: 100px;
+  }
+  .short-img {
+    position: relative;
+    right: -100px;
+  }
+  .banner-section-text {
+    width: 100%;
+  }
+  .img-container img {
+    width: 500px;
+  }
+  .big-img {
+    width: 50%;
+  }
   .game-cards-container {
     margin-top: 350px;
   }
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .buttons-section {
+    flex-direction: column-reverse;
+    padding: 0;
+    gap: 0px;
+  }
+  .career {
+    width: 100%;
+    background: var(--linear-pink);
+    height: 105vh;
+    width: 100vw;
+  }
+  .career-title {
+    text-align: center;
+  }
+  .career-content {
+    flex-direction: column;
+  }
+  .img-container img {
+    height: 400px;
+  }
+  .buttons-section-image {
+    padding: 50px;
+  }
+
+  .buttons-section-image > img {
+    width: 100%;
+  }
+  .footer-nav,
+  .icons,
+  .terms-and-conditions {
+    flex-wrap: wrap;
   }
 }
