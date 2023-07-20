@@ -489,10 +489,6 @@ footer {
     width: 70%;
     margin: 0 auto;
   }
-  /* .content-width {
-    width: 95%;
-    margin: 0 auto;
-  } */
   header {
     background: #fff;
     box-shadow: none;
@@ -517,10 +513,6 @@ footer {
     align-items: center;
     background-color: #fff;
   }
-  /* .hero-img {
-    width: 50%;
-  } */
-
   .hero-img img {
     width: 100%;
     height: auto;
@@ -535,6 +527,26 @@ footer {
     background-size: 350px;
     width: 300px;
     height: 300px;
+  }
+  .gamer {
+    flex-direction: column;
+    margin-top: 250px;
+  }
+
+  .gamer-img-container img {
+    height: 50%;
+    max-width: 350px;
+  }
+
+  .gamer-content {
+    text-align: center;
+  }
+  .gamer-text-description {
+    text-align: center;
+  }
+  .button-right {
+    padding-top: 20px;
+    padding-left: 0;
   }
 
   .banner-section {
@@ -567,7 +579,7 @@ footer {
     margin-top: 0;
   }
   .game-cards-container {
-    margin-top: 300px;
+    margin-top: 100px;
   }
   .game-cards {
     grid-template-columns: repeat(1, 1fr);
